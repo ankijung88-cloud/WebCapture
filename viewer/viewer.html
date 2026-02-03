@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Preview</title>
+    <link rel="stylesheet" href="viewer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="logo">Guide Capture</div>
+        <div class="actions">
+            <button id="exportBtn" class="btn btn-secondary">Export to HTML</button>
+            <button id="printBtn" class="btn btn-primary">Print / PDF</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="guide-header">
+            <h1 contenteditable="true" id="guideTitle">Untitled Guide</h1>
+            <p class="meta">Recorded on <span id="recordDate"></span> • <span id="stepCount">0</span> steps</p>
+        </div>
+
+        <div class="steps-container" id="stepsList">
+            <!-- Steps will be injected here -->
+            <div class="empty-state">
+                <p>No steps recorded yet.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="viewer.js"></script>
+</body>
+
+</html>

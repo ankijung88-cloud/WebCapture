@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Web Guide Capture",
+  "version": "1.0",
+  "description": "Capture web interactions and create step-by-step guides.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

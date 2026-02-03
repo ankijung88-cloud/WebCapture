@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #667eea;
+    --bg-color: #f4f6f8;
+    --card-bg: #ffffff;
+    --text-main: #2d3748;
+    --text-secondary: #718096;
+    --border-color: #e2e8f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+.top-bar {
+    background: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    margin-right: 0.5rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.guide-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+    border-bottom: 2px solid transparent;
+}
+
+h1:focus {
+    border-bottom-color: var(--primary-color);
+}
+
+.meta {
+    color: var(--text-secondary);
+}
+
+.step-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.step-number {
+    background: var(--primary-color);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-description {
+    font-size: 1.25rem;
+    font-weight: 600;
+    flex: 1;
+    outline: none;
+    border-bottom: 1px solid transparent;
+}
+
+.step-description:focus {
+    border-bottom-color: var(--primary-color);
+}
+
+.step-image-container {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background: #f8fafc;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media print {
+    @page {
+        margin: 0;
+    }
+
+    .top-bar,
+    .meta {
+        display: none;
+    }
+
+    body {
+        background: white;
+        margin: 1.6cm;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .step-card {
+        box-shadow: none;
+        break-inside: avoid;
+        border: 1px solid #ddd;
+    }
+}

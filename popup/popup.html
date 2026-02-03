@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Capture</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Guide Capture</h1>
+      <div class="status-badge" id="statusBadge">Ready</div>
+    </div>
+    
+    <div class="content">
+      <p class="description" id="descriptionText">
+        Click below to start recording your steps.
+      </p>
+      
+      <div class="timer" id="timer" style="display: none;">00:00</div>
+
+      <button id="actionBtn" class="btn btn-primary">
+        <span class="icon">●</span> Start Recording
+      </button>
+    </div>
+
+    <div class="footer">
+      <a href="#" id="viewGuidesBtn">View Saved Guides</a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
