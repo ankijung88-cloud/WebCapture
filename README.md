@@ -1,53 +1,53 @@
 # Web Guide Capture
 
-A powerful Chrome Extension that helps you create step-by-step guides by capturing your web interactions. Similar to ScribeHow, it automatically records your clicks and navigation to generate visual documentation.
+웹 상호작용을 캡처하여 단계별 가이드를 생성해주는 강력한 크롬 확장 프로그램입니다. ScribeHow와 유사하게, 클릭과 탐색을 자동으로 기록하여 시각적 문서를 생성합니다.
 
-## Features
+## 주요 기능
 
-- **Automatic Interaction Recording**: Captures clicks, inputs, and navigation events automatically.
-- **Glassmorphism UI**: Modern and beautiful user interface.
-- **Step-by-Step Guides**: Generates clear, visual guides from your recorded actions.
-- **Privacy Focused**: Runs entirely locally in your browser.
+- **자동 상호작용 기록**: 클릭, 입력, 탐색 이벤트를 자동으로 캡처합니다.
+- **글래스모피즘 UI**: 현대적이고 아름다운 사용자 인터페이스를 제공합니다.
+- **단계별 가이드**: 기록된 작업을 바탕으로 명확한 시각적 가이드를 생성합니다.
+- **프라이버시 중심**: 브라우저 로컬에서 완전히 독립적으로 실행됩니다.
 
-## Installation
+## 설치 방법
 
-1. **Clone the repository** or download the source code.
+1. **저장소 복제** 또는 소스 코드 다운로드
    ```bash
    git clone https://github.com/ankijung88-cloud/WebCapture.git
    ```
 
-2. **Open Chrome Extensions Management**
-   - Open Google Chrome.
-   - Navigate to `chrome://extensions/` in the address bar.
+2. **Chrome 확장 프로그램 관리 페이지 열기**
+   - Google Chrome을 엽니다.
+   - 주소 표시줄에 `chrome://extensions/`를 입력하여 이동합니다.
 
-3. **Enable Developer Mode**
-   - Toggle the **Developer mode** switch in the top-right corner of the page.
+3. **개발자 모드 활성화**
+   - 페이지 우측 상단의 **개발자 모드** 스위치를 켭니다.
 
-4. **Load the Extension**
-   - Click the **Load unpacked** button that appears.
-   - Select the root directory of this project (the folder containing `manifest.json`).
+4. **확장 프로그램 로드**
+   - 나타나는 **압축해제된 확장 프로그램을 로드합니다** 버튼을 클릭합니다.
+   - 이 프로젝트의 루트 디렉토리(`manifest.json`이 있는 폴더)를 선택합니다.
 
-## Usage
+## 사용 방법
 
-1. **Start Recording**
-   - Click the **Web Guide Capture** extension icon in your Chrome toolbar.
-   - Click the **Start Recording** button in the popup.
+1. **녹화 시작**
+   - Chrome 도구 모음에서 **Web Guide Capture** 아이콘을 클릭합니다.
+   - 팝업에서 **녹화 시작 (Start Recording)** 버튼을 클릭합니다.
 
-2. **Perform Actions**
-   - Navigate through the website and perform the actions you want to document.
-   - The extension will automatically highlight elements and record your interactions.
+2. **작업 수행**
+   - 웹사이트를 탐색하며 문서화하려는 작업을 수행합니다.
+   - 확장 프로그램이 자동으로 요소를 강조 표시하고 상호작용을 기록합니다.
 
-3. **Finish & Export**
-   - Open the extension popup again and click **Stop Recording**.
-   - A new tab will open displaying your generated step-by-step guide.
-   - You can review and save your guide from this view.
+3. **종료 및 내보내기**
+   - 확장 프로그램 팝업을 다시 열고 **녹화 중지 (Stop Recording)**를 클릭합니다.
+   - 생성된 단계별 가이드를 보여주는 새 탭이 열립니다.
+   - 이 화면에서 가이드를 검토하고 저장할 수 있습니다.
 
-## Technologies Used
+## 사용 기술
 
-- **Manifest V3**: Using the latest Chrome Extension API standards.
-- **JavaScript (ES6+)**: Core logic for recording and guide generation.
-- **HTML5 & CSS3**: Custom Glassmorphism design.
+- **Manifest V3**: 최신 Chrome 확장 프로그램 API 표준 사용.
+- **JavaScript (ES6+)**: 녹화 및 가이드 생성을 위한 핵심 로직.
+- **HTML5 & CSS3**: 커스텀 글래스모피즘 디자인.
 
-## License
+## 라이선스
 
 [MIT](LICENSE)
